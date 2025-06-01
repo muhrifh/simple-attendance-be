@@ -1,51 +1,41 @@
-## Api Backend Node JS
+## Getting Started
+How to run the `development server`.
 
-### Instalation
+```bash
+1. npm install
+2. copy envfiles/.env.development to root dir with name .env
+3. make .vscode folder in root dir
+4. copy envfiles/.vscode.settings.json rename to settings.json
+5. execute database PostgreSQL script table and data
+6. recheck the .env DB parameters
+7. running with >> npm run dev
 ```
-npm install -g yarn
-yarn
-```
+Port based on .env and default was [http://localhost:3334](http://localhost:3334).
 
-### Running dev
-Change database variable in .env
-
-```
-yarn run dev
-
-```
-
-## Forbidden technic
-
-
-### Python
-
-```
-python -m virtualenv venv
-
-# on windows
-./venv/Scripts/activate.bat
-
-# on linux
-source ./venv/bin/activate
-
-pip install ./tools/harmony-1.5.6-py3-none-any.whl
-pip install ./tools/harmony_adonis-1.0.1-py3-none-any.whl
-
+## Development
+```bash
+1. git add
+2. git commit -m ""
+3. update version in package.json {optional} git tag v1.0.0 
+4. git push
+5. {if tag updated} >> git push origin tag v1.0.0
 ```
 
+Make sure to follow the versioning rule, <b>v[Major].[Minor].[Patch]</b>
+
+### Major
+For major features or changes. Changes can be breaking.
+
+### Minor
+For minor features
+
+### Patch
+For bug fixes, and minor improvements.
+
+
+## Deployment
+Two step to `build this project`.
+```bash
+1. npm install
+2. npm run build
 ```
-# create entities first
-adonis make entity
-
-# create skeleton
-adonis make all --entity schema.table
-
-```
-
-Try api in contracts folder.
-
-Done!
-
-
-Cheers
-Komandan
