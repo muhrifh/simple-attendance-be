@@ -1,0 +1,11 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build",
+    // "moduleResolution": "NodeNext",
+    // "paths": {
+    //   "#*": ["./app/*", "./database/*", "./start/*", "./tests/*", "./config/*"]
+    // }
+  }
+}

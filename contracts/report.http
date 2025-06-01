@@ -1,0 +1,10 @@
+### GET REPORT SALARY EMPLOYEE
+GET http://127.0.0.1:3334/v2/reports/salary/2025-05
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+### GET ATTENDANCE MONTHS YEAR
+GET http://127.0.0.1:3334/v2/attendances-reports/months-year
+Content-Type: application/json
+Authorization: Bearer {{token}}

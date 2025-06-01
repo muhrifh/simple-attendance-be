@@ -1,0 +1,24 @@
+@version=v2
+
+### INDEX
+GET http://{{host}}/{{version}}/global-params?page=1&page_size=10&filter=[]&sort=[] HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### DETAIL
+GET http://{{host}}/{{version}}/global-params/15d62688-2baf-4e01-9909-b60ccb40f4c8 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### UPDATE
+PUT http://{{host}}/{{version}}/global-params HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "id" : "15d62688-2baf-4e01-9909-b60ccb40f4c8",
+  "key" : "BASE_SALARY",
+  "value" : "10000000",
+  "split_code" : "",
+  "is_editable" : true
+}

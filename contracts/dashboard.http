@@ -1,0 +1,40 @@
+@version=v2
+
+### GET DATE RANGE
+GET http://{{host}}/{{version}}/dashboard/date-range HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### GET LATE ARRIVALS
+GET http://{{host}}/{{version}}/dashboard/late-arrivals?start_date=2025-05-01&end_date=2025-05-31 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### GET EMPLOYEE ATTENDANCE DETAILS
+GET http://{{host}}/{{version}}/dashboard/employee-attendance-details?start_date=2025-05-01&end_date=2025-05-31 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### GET TEAM ATTENDANCE SUMMARY
+GET http://{{host}}/{{version}}/dashboard/team-attendance-summary?start_date=2025-05-01&end_date=2025-05-31 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### GET OVERALL ATTENDANCE PERCENTAGE
+GET http://{{host}}/{{version}}/dashboard/overall-attendance-percentage?start_date=2025-05-01&end_date=2025-05-31 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### GET TOP ABSENCE REASONS
+GET http://{{host}}/{{version}}/dashboard/top-absence-reasons?start_date=2025-05-01&end_date=2025-05-31 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### GET ABSENTEEISM BY DEPARTMENT
+GET http://{{host}}/{{version}}/dashboard/absenteeism-by-department?start_date=2025-05-01&end_date=2025-05-31 HTTP/1.1
+Authorization: Bearer {{token}}
+
+
+### GET DAILY ATTENDANCE TREND
+GET http://{{host}}/{{version}}/dashboard/daily-attendance-trend?start_date=2025-05-01&end_date=2025-05-31 HTTP/1.1
+Authorization: Bearer {{token}}

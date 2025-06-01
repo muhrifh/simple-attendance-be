@@ -1,0 +1,8 @@
+### LOGIN
+POST http://127.0.0.1:3334/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username" : "root",
+    "password" : "user123"
+}

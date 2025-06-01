@@ -1,0 +1,21 @@
+{
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "version": "v1",
+      "prodToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiYjRlMzc5NS1mMDkzLTQzNTktODdhNC04YjBhZWEyMTliYTUiLCJ1c2VybmFtZSI6ImRhZGFuZzIiLCJyb2xlcyI6WyJ1c2VyIiwiY3NjIl0sImZ1bGxfbmFtZSI6ImRhZGFuZyB2MiIsImlhdCI6MTc0NDYwMzE1MywiZXhwIjoxNzQ0Nzc1OTUzLCJpc3MiOiJtYWduZXQiLCJzdWIiOiJhc3NldCJ9.IQ7HAZ8DMNzzKFdSCqkUsYE8uCCjwax66kFRIMB6efc",
+      "nonProdToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJiYjRlMzc5NS1mMDkzLTQzNTktODdhNC04YjBhZWEyMTliYTUiLCJ1c2VybmFtZSI6ImRhZGFuZzIiLCJyb2xlcyI6WyJ1c2VyIiwiY3NjIl0sImZ1bGxfbmFtZSI6ImRhZGFuZyB2MiIsImlhdCI6MTc0NDYwMzE1MywiZXhwIjoxNzQ0Nzc1OTUzLCJpc3MiOiJtYWduZXQiLCJzdWIiOiJhc3NldCJ9.IQ7HAZ8DMNzzKFdSCqkUsYE8uCCjwax66kFRIMB6efc",
+      "extension": "VSCODE: REST CLIENT -Huachao Mao"
+    },
+    "local": {
+      "version": "v2",
+      "host": "127.0.0.1:3334",
+      "token": "{{$shared nonProdToken}}",
+      "secretKey": "devSecret"
+    },
+    "production": {
+      "host": "example.com",
+      "token": "{{$shared prodToken}}",
+      "secretKey": "prodSecret"
+    }
+  }
+}
