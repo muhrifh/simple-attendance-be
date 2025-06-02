@@ -165,13 +165,13 @@ export default class SalaryReportService {
     }
 
     // Iterate over all weekend dates for the month.
-    for (const weekendDateStr of weekdaysInfo.weekend_dates) {
-      const wasPresentAndOnTime = empSpecificActualAttendance!.get(weekendDateStr) === true;
-      if (wasPresentAndOnTime) {
-        weekendWorkDays++;
-      }
-      attendanceStatusForWeekdays[weekendDateStr] = wasPresentAndOnTime;
-    }
+    // for (const weekendDateStr of weekdaysInfo.weekend_dates) {
+    //   const wasPresentAndOnTime = empSpecificActualAttendance!.get(weekendDateStr) === true;
+    //   if (wasPresentAndOnTime) {
+    //     weekendWorkDays++;
+    //   }
+    //   attendanceStatusForWeekdays[weekendDateStr] = wasPresentAndOnTime;
+    // }
 
     const companyTotalWeekdays = weekdaysInfo.count;
     const daysAbsentOnWeekdays = companyTotalWeekdays - daysPresentOnWeekdays;
